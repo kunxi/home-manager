@@ -6,11 +6,4 @@
     yarn
     nodePackages.jsonlint
   ];
-
-  home.file = {
-    "npmrc" = {
-      source = ./npmrc;
-      target = ".npmrc";
-    };
-  };
 }
