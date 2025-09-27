@@ -3,8 +3,11 @@
 {
   home.packages = with pkgs; [
     direnv
+    devenv
+    nixfmt
 
     autoconf
+    cloc
     cmake
     httpie
     jq
