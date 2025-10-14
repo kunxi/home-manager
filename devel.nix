@@ -8,6 +8,7 @@
 
     autoconf
     cloc
+    duckdb
     cmake
     httpie
     jq
