@@ -72,6 +72,7 @@
       stash.showPath = true;
       tag.sort = "version:refname";
       difftool.prompt = false;
+      init.defaultBranch = "main";
     };
 
     # TODO: add gitignore.
