@@ -10,6 +10,7 @@
     pip
     nox  # test accros versions
     setuptools
+    uv
     yamllint
   ];
 }
