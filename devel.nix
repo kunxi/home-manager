@@ -9,6 +9,7 @@
     autoconf
     cloc
     duckdb
+    doxygen
     cmake
     httpie
     jq
