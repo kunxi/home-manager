@@ -22,7 +22,8 @@
 
     shellAliases = rec {
       k = "kubectl";
-      ls = "eza";
+      # https://github.com/eza-community/eza/issues/964
+      ls = "eza -HF \$@";
     };
 
     initContent = ''
