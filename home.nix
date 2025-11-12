@@ -81,13 +81,7 @@ in
     # zoxide  # cd
     # TODO: add gm, ffmpeg with CUDA
   ]
-    ++ lib.optionals pkgs.hostPlatform.isLinux linuxPackages
-    ++ lib.optionals pkgs.hostPlatform.isDarwin macOSPackages
+    ++ lib.optionals stdenv.hostPlatform.isLinux linuxPackages
+    ++ lib.optionals stdenv.hostPlatform.isDarwin macOSPackages
   ;
-
-  # ssh
-  programs.ssh = {
-    enable = true;
-    # TODO: add more configuration here.
-  };
 }

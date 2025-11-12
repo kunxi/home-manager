@@ -2,14 +2,14 @@
 
 let 
   linuxPackages = with pkgs; [
-    pinentry
+    pinentry-curses
   ];
 in
 {
   home.packages = with pkgs; [
     gnupg
     pass
-  ] ++ lib.optionals pkgs.hostPlatform.isLinux linuxPackages;
+  ] ++ lib.optionals stdenv.hostPlatform.isLinux linuxPackages;
 
   services.gpg-agent = {
     enable = true;

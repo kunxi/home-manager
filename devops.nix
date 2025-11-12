@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs; [
     awscli2
-    aws-sam-cli
+    # aws-sam-cli
     aws-iam-authenticator
     cf-terraforming
     fastly
