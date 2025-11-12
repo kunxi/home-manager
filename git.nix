@@ -7,9 +7,8 @@
     settings = {
       user.name = "Kun Xi";
       user.email = "kunxi@kunxi.org";
-      init.defaultBranch = "main";
 
-      aliases = {
+      alias = {
         a = "add";
         br = "branch";
         st = "status";
@@ -30,52 +29,50 @@
         dt = "difftool";
       };
 
-      extraConfig = {
-        core = {
-          editor = "nvim";
-          preloadingindex = true;
-          autocrlf = "input";
-          eol = "lf";
-          filemode = false;
-        };
-
-        color = {
-          diff = "auto";
-          status = "auto";
-          branch = "auto";
-          interactive = "auto";
-          ui = true;
-          pager = true;
-        };
-
-        merge = {
-          tool = "vimdiff";
-          conflictStyle = "diff3";
-        };
-
-        diff = {
-          tool = "vimdiff";
-          wsErrorHighlight = "all";
-          colorMoved = true;
-          colorMovedWS = "allow-indentation-change";
-        };
-
-        pull = {
-          rebaes = true;
-          default = "current";
-        };
-
-        push = {
-          autoSetupRemote = "true";
-        };
-
-        log.date = "local";
-        rebase.autosquash = true;
-        stash.showPath = true;
-        tag.sort = "version:refname";
-        difftool.prompt = false;
-        init.defaultBranch = "main";
+      core = {
+        editor = "nvim";
+        preloadingindex = true;
+        autocrlf = "input";
+        eol = "lf";
+        filemode = false;
       };
+
+      color = {
+        diff = "auto";
+        status = "auto";
+        branch = "auto";
+        interactive = "auto";
+        ui = true;
+        pager = true;
+      };
+
+      merge = {
+        tool = "vimdiff";
+        conflictStyle = "diff3";
+      };
+
+      diff = {
+        tool = "vimdiff";
+        wsErrorHighlight = "all";
+        colorMoved = true;
+        colorMovedWS = "allow-indentation-change";
+      };
+
+      pull = {
+        rebaes = true;
+        default = "current";
+      };
+
+      push = {
+        autoSetupRemote = "true";
+      };
+
+      log.date = "local";
+      rebase.autosquash = true;
+      stash.showPath = true;
+      tag.sort = "version:refname";
+      difftool.prompt = false;
+      init.defaultBranch = "main";
     };
 
     # TODO: add gitignore.

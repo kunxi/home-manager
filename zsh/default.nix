@@ -87,7 +87,6 @@
       "autosuggestions"
       "gpg"
       "ssh"
-      "ssh-agent"
       "ruby"
       "python"
       "node"
