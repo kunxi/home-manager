@@ -27,6 +27,7 @@ in
     ./zsh/default.nix
     ./python.nix
     ./rust.nix
+    ./ssh.nix
     ./nodejs/default.nix
     ./minizinc/default.nix
     ./tmux.nix
