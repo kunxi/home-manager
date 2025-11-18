@@ -59,7 +59,7 @@
       };
 
       pull = {
-        rebaes = true;
+        rebase = true;
         default = "current";
       };
 
