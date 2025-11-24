@@ -6,6 +6,7 @@
     devenv
     nixfmt
 
+    ansible
     autoconf
     cloc
     duckdb
@@ -18,6 +19,7 @@
     pv  # progress view
     ripgrep
     rlwrap  # rlwrap sqlite3 foo.db for readline support.
+    sshpass # used for ansible
     tree
     tealdeer  # tldr
     tokei # Handy tool to see lines of code by language

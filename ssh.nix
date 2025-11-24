@@ -10,6 +10,9 @@
     extraConfig = ''
       AddKeysToAgent  yes
     '';
+    includes = [
+      "~/.ssh/config.d/*"
+    ];
   };
 
   services.ssh-agent.enable = true;

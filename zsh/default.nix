@@ -102,7 +102,7 @@
     python.virtualenvAutoSwitch = true;
     ruby.chrubyAutoSwitch = true;
 
-    ssh.identities = [ "id_rsa" "id_rsa2" "id_github" "id_ecdsa" "id_ed25519" ];
+    ssh.identities = [ "id_rsa" "id_rsa2" "id_github" "id_ecdsa" "id_ed25519" "id_packer" ];
 
     syntaxHighlighting.highlighters = [ "main" "brackets" "pattern" "line" "cursor" "root" ];
 
