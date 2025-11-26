@@ -15,7 +15,9 @@ let
     strace
   ];
 
-  macOSPackages = with pkgs; [];
+  macOSPackages = with pkgs; [
+    wireguard-tools
+  ];
 in
 {
   imports = [
