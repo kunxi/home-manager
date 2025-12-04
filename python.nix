@@ -4,7 +4,6 @@
   home.packages = with pkgs.python313Packages; [
     python
     ipython
-    jmespath
     black
     cookiecutter
     ruff
