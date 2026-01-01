@@ -5,6 +5,7 @@
     minizinc
     gecode
     cbc
+    or-tools
   ];
 
   home.file = {
