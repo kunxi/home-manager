@@ -3,7 +3,6 @@
 {
   programs.ssh = {
     enable = true;
-    enableDefaultConfig = false;
     matchBlocks = {
         "*" = {};
     };
@@ -15,5 +14,5 @@
     ];
   };
 
-  services.ssh-agent.enable = true;
+  services.ssh-agent.enable = pkgs.stdenv.hostPlatform.isLinux;
 }

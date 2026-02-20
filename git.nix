@@ -4,7 +4,7 @@
   programs.git = {
     enable = true;
     package = pkgs.gitFull;
-    settings = {
+    extraConfig = {
       user.name = "Kun Xi";
       user.email = "kunxi@kunxi.org";
 
