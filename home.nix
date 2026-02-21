@@ -25,6 +25,7 @@ in
     ./git.nix
     ./devops.nix
     ./devel.nix
+    ./gnuplot.nix
     ./neovim.nix
     ./zsh/default.nix
     ./python.nix
