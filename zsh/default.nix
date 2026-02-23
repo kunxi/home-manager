@@ -9,6 +9,10 @@
   # use starship, and no-nerd-font preset, see issue #576
   programs.starship.enable = true;
 
+  home.packages = lib.mkIf pkgs.stdenv.hostPlatform.isDarwin [
+    pkgs.coreutils  # install the gnu utils.
+  ];
+
   home.file = {
     "starship.config" = {
       source = ./no-nerd-font.toml;
