@@ -9,6 +9,14 @@
     gnuplot
   ];
 
+  home.file = {
+    "xyplot.plt" = {
+      source = ./xyplot.plt;
+      target = "bin/xyplot.plt";
+      executable = true;
+    };
+  };
+
   fonts.fontconfig.enable = true;
 
   home.sessionVariables = {

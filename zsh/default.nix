@@ -18,6 +18,16 @@
       source = ./no-nerd-font.toml;
       target = ".config/starship.toml";
     };
+    "ttfb.sh" = {
+      source = ./ttfb.sh;
+      target = "bin/ttfb.sh";
+      executable = true;
+    };
+    "rss-track.sh" = {
+      source = ./rss-track.sh;
+      target = "bin/rss-track.sh";
+      executable = true;
+    };
   };
 
   programs.zsh = {
