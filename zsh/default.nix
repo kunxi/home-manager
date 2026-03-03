@@ -58,6 +58,8 @@
       fi
 
       path+=("$HOME/bin")
+      path+=("$HOME/.npm-packages/bin")
+
       # Add vscode
       if [ -d "/Applications/Visual Studio Code.app/Contents/Resources/app/bin" ]; then
         path+=("/Applications/Visual Studio Code.app/Contents/Resources/app/bin")
