@@ -81,6 +81,7 @@ in
     # sd        # sed replacement
     # skim      # fuzzy finder
     unzip
+    util-linux
     wget
     # zoxide  # cd
     # TODO: add gm, ffmpeg with CUDA

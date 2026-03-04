@@ -4,11 +4,10 @@
   programs.ssh = {
     enable = true;
     matchBlocks = {
-        "*" = {};
+        "*" = {
+          addKeysToAgent = "yes";
+        };
     };
-    extraConfig = ''
-      AddKeysToAgent  yes
-    '';
     includes = [
       "~/.ssh/config.d/*"
     ];
