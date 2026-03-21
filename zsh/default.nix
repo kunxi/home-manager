@@ -18,14 +18,10 @@
       source = ./no-nerd-font.toml;
       target = ".config/starship.toml";
     };
-    "ttfb.sh" = {
-      source = ./ttfb.sh;
-      target = "bin/ttfb.sh";
-      executable = true;
-    };
-    "rss-track.sh" = {
-      source = ./rss-track.sh;
-      target = "bin/rss-track.sh";
+
+    "bin" = {
+      source = ./bin;
+      recursive = true;
       executable = true;
     };
   };
@@ -85,11 +81,6 @@
         # use native ssh-agent
         eval $(ssh-agent -s)
 
-        # Fix the WSLInterop broken issue
-        if [ ! -f /proc/sys/fs/binfmt_misc/WSLInterop ]; then
-          sudo mount -t binfmt_misc none /proc/sys/fs/binfmt_misc 2>/dev/null
-          echo ':WSLInterop:M::MZ::/init:PF' | sudo tee /proc/sys/fs/binfmt_misc/register >/dev/null
-        fi
       fi
     '';
   };

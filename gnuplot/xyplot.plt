@@ -7,12 +7,12 @@ set terminal png
 set output ARG2
 
 # Set plot title and axis labels
-set title "RSS memeory usage(kB) over Time"
-set xlabel "Time in milisecond"
+set title "RSS memeory usage(MB) over Time"
+set xlabel "Time in seconds"
 set ylabel "Memory usage (MB)"
 
 # Enable grid for better readability
 set grid
 
 stats ARG1 using 1 nooutput
-plot ARG1 using ($1 - STATS_min + 20):($2/1000) title "rss" with lines
+plot ARG1 using (($1 - STATS_min)/1000 + 10):($2/1000) title "rss" with lines
