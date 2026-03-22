@@ -80,6 +80,7 @@ in
     restic      # backup
     # sd        # sed replacement
     # skim      # fuzzy finder
+    unrar
     unzip
     util-linux
     wget

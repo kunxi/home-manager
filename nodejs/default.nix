@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    nodejs_22
+    nodejs_24
     yarn
   ];
 }
