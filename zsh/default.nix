@@ -1,5 +1,9 @@
 { config, lib, pkgs, ... }:
-
+let
+  macOSPackages = with pkgs; [
+    coreutils  # install the gnu utils.
+  ];
+in
 {
   # Invoke home-manager: `home-manager switch` to deploy the change, to switch
   # the shell:
@@ -9,9 +13,10 @@
   # use starship, and no-nerd-font preset, see issue #576
   programs.starship.enable = true;
 
-  home.packages = lib.mkIf pkgs.stdenv.hostPlatform.isDarwin [
-    pkgs.coreutils  # install the gnu utils.
-  ];
+  home.packages = with pkgs;  [
+    eza         # better ls
+    zoxide
+  ] ++ lib.optionals stdenv.hostPlatform.isDarwin macOSPackages;
 
   home.file = {
     "starship.config" = {
@@ -73,7 +78,7 @@
       fi
 
       # zoxide installation
-      # eval "$(zoxide init zsh)"
+      eval "$(zoxide init zsh)"
 
       if (( ''$+WSL_DISTRO_NAME )); then
         # WSL-specific aliases

@@ -59,7 +59,6 @@ in
     # Daily drives
     bat         # cat replacement written in Rust
     bc          # calculator
-    eza         # better ls
     curlFull
     datamash    # stats
     dos2unix
