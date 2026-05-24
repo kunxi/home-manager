@@ -25,6 +25,7 @@
     tokei # Handy tool to see lines of code by language
 
     # Database
+    postgresql
     redis
     sqlite
   ];
