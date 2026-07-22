@@ -5,4 +5,11 @@
     nodejs_24
     yarn
   ];
+
+  home.file = {
+    "npmrc" = {
+      source = ./npmrc;
+      target = ".npmrc";
+    };
+  };
 }
