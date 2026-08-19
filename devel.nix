@@ -28,6 +28,9 @@
     postgresql
     redis
     sqlite
+
+    # HTML tool
+    validator-nu
   ];
 
   # Use nix-direnv integration

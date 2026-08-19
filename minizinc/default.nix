@@ -3,7 +3,6 @@
 {
   home.packages = with pkgs; [
     minizinc
-    gecode
     cbc
     # or-tools
   ];
